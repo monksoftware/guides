@@ -14,6 +14,7 @@ General
 * Do not nest context too deep
 * Use shared examples where appropriate
 * Use metaprogramming for testing same code for multiple input values. [Example][metaprogramming-example]
+* Try to keep each assertion in separate example (exception: asserting on attributes of hashes, records etc).
 
 [braces-example]: /style/rspec/braces.rb
 [metaprogramming-example]: /style/rspec/metaprogramming.rb
