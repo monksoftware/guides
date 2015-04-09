@@ -16,7 +16,6 @@ Rails
 * Order i18n translations alphabetically by key name.
 * Order model contents: constants, macros, public methods, private methods.
 * Put application-wide partials in the [`app/views/application`] directory.
-* Use `def self.method`, not the `scope :method` DSL.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 * Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
 
