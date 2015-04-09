@@ -8,6 +8,8 @@ General
 * If you need something to be available before specs are run, use `let!`
 * Write `it 'returns true'` and not `it 'should return true'`
 * Do not use `rand`, `Faker` or any non-deterministic values anywhere
+* Do not use `described_class` or `subject`
+* Use `subject` only for contexts with shorthand syntax, `it { should be_present }`
 
 Factories
 ---------
