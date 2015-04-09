@@ -12,7 +12,7 @@ General
 * Use `subject` only for contexts with shorthand syntax, `it { should be_present }`
 * Do not use braces when not needed. [Example][braces-example]
 
-[braces-example]: /style/rspec/sample.rb#L2-L6
+[braces-example]: /style/rspec/sample.rb#L2-L8
 
 Factories
 ---------
