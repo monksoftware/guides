@@ -23,6 +23,8 @@ Factories
 ---------
 
 * Call factory girl helpers directly, without `FactoryGirl.` prefix
+* Use `create_list` for creating array of records
+* Use `create_pair` for creating two records
 
 Controllers
 -----------
