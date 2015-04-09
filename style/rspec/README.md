@@ -6,10 +6,25 @@ General
 
 * Do not use instance variables - use `let` instead
 * If you need something to be available before specs are run, use `let!`
+* Write `it 'returns true'` and not `it 'should return true'`
+* Do not use `rand`, `Faker` or any non-deterministic values anywhere
 
 Factories
 ---------
 
-* Do not use `rand`, `Faker` or any non-deterministic values for attributes
 * Call factory girl helpers directly, without `FactoryGirl.` prefix
 * Do not use braces when not needed (`let(:product) { create :product, :trait, attr: :val }`)
+
+Controllers
+-----------
+
+* Avoid hitting database - stub services/finders
+* Do not render views
+* Do not assert on assigns
+* Assert on redirects
+* Assert on flash messages being set
+* Assert on success/error statuses
+* Execute request in `before` block and assert on results in separate examples
+* Use [shoulda-matchers][shoulda-matchers]
+
+[shoulda-matchers]: https://github.com/thoughtbot/shoulda-matchers
