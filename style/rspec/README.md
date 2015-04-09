@@ -17,6 +17,7 @@ General
 * Use shared examples where appropriate
 * Use metaprogramming for testing same code for multiple input values. [Example][metaprogramming-example]
 * Try to keep each assertion in separate example (exception: asserting on attributes of hashes, records etc).
+* Use `#method` for instance level methods, and `.method` for class level methods
 
 [braces-example]: /style/rspec/braces.rb
 [metaprogramming-example]: /style/rspec/metaprogramming.rb
@@ -27,6 +28,7 @@ Factories
 * Call factory girl helpers directly, without `FactoryGirl.` prefix
 * Use `create_list` for creating array of records
 * Use `create_pair` for creating two records
+* Avoid `create*`, use `build_stubbed` or `build` if possible
 
 Controllers
 -----------
@@ -42,3 +44,15 @@ Controllers
 
 [shoulda-matchers]: https://github.com/thoughtbot/shoulda-matchers
 [controller-example]: /style/rspec/controller_sample.rb
+
+Models
+------
+
+* Do not test associations
+* Do not test validation one-liners
+* Test more complex validations
+* Do not use `default_scope`. [Reasoning][default-scope]
+* Do not test methods that do not contain any logic/branching
+* Test scopes with real records
+
+[default-scope]: http://rails-bestpractices.com/posts/2013/06/15/default_scope-is-evil/
