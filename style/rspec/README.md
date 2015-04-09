@@ -4,6 +4,8 @@ RSpec
 General
 -------
 
+* All specs green on master are mandatory
+* Do not use `xit`, `pending` and do not comment out examples
 * Do not use instance variables - use `let` instead
 * If you need something to be available before specs are run, use `let!`
 * Write `it 'returns true'` and not `it 'should return true'`
