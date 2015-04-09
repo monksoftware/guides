@@ -12,7 +12,7 @@ General
 * Use `subject` only for contexts with shorthand syntax, `it { should be_present }`
 * Do not use braces when not needed. [Example][braces-example]
 
-[braces-example]: /style/rspec/sample.rb#L2-L8
+[braces-example]: /style/rspec/braces.rb
 
 Factories
 ---------
@@ -28,7 +28,8 @@ Controllers
 * Assert on redirects
 * Assert on flash messages being set
 * Assert on success/error statuses
-* Execute request in `before` block and assert on results in separate examples
+* Execute request in `before` block and assert on results in separate examples. [Example][controller-example]
 * Use [shoulda-matchers][shoulda-matchers]
 
 [shoulda-matchers]: https://github.com/thoughtbot/shoulda-matchers
+[controller-example]: /style/rspec/controller_sample.rb
