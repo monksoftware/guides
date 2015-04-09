@@ -11,8 +11,12 @@ General
 * Do not use `described_class` or `subject`
 * Use `subject` only for contexts with shorthand syntax, `it { should be_present }`
 * Do not use braces when not needed. [Example][braces-example]
+* Do not nest context too deep
+* Use shared examples where appropriate
+* Use metaprogramming for testing same code for multiple input values. [Example][metaprogramming-example]
 
 [braces-example]: /style/rspec/braces.rb
+[metaprogramming-example]: /style/rspec/metaprogramming.rb
 
 Factories
 ---------
