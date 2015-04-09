@@ -10,12 +10,14 @@ General
 * Do not use `rand`, `Faker` or any non-deterministic values anywhere
 * Do not use `described_class` or `subject`
 * Use `subject` only for contexts with shorthand syntax, `it { should be_present }`
+* Do not use braces when not needed. [Example][braces-example]
+
+[braces-example]: /style/rspec/sample.rb#L2-L6
 
 Factories
 ---------
 
 * Call factory girl helpers directly, without `FactoryGirl.` prefix
-* Do not use braces when not needed (`let(:product) { create :product, :trait, attr: :val }`)
 
 Controllers
 -----------
